@@ -1,0 +1,35 @@
+{
+    "name": "sfphp/meetup-tools",
+    "description": "scripts/forms to automate creating meetup events",
+    "license": "MIT",
+    "type": "utility",
+    "keywords": [
+        "sfphp",
+        "meetup",
+        "meetup.com"
+    ],
+    "homepage": "https://github.com/sfphp/meetup-tools",
+    "authors": [
+        {
+            "name": "Mike Tougeron",
+            "email": "github+klout-sdk-php@tougeron.com",
+            "homepage": "http://mtougeron.github.com/"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=5.4.*",
+        "zendframework/zendframework": "2.3.*",
+        "dms/meetup-api-client": "1.*"
+    },
+    "require-dev": {
+        "symfony/class-loader": "*",
+        "phpunit/phpunit": "3.7.*",
+        "fabpot/php-cs-fixer": "*",
+        "mockery/mockery": ">=0.7.2"
+    },
+    "autoload": {
+        "classmap": ["module/", "vendor/"]
+    }
+}

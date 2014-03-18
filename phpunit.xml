@@ -1,0 +1,16 @@
+<phpunit verbose="true" bootstrap="tests/bootstrap.php">
+    <filter>
+        <blacklist>
+
+            <directory>tests</directory>
+            <directory>vendor/</directory>
+            <directory suffix=".phtml">module</directory>
+
+        </blacklist>
+    </filter>
+    <testsuites>
+        <testsuite name="Application">
+            <directory>module/Application/tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
