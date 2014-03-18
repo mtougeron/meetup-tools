@@ -1,0 +1,12 @@
+vendor/
+composer.lock
+*.phar
+.php-version
+.idea/*
+.DS_Store?
+.DS_Store
+build/
+.settings/
+.buildpath
+.project
+local.php
