@@ -12,14 +12,14 @@
     "authors": [
         {
             "name": "Mike Tougeron",
-            "email": "github+klout-sdk-php@tougeron.com",
+            "email": "github+meetup-tools@tougeron.com",
             "homepage": "http://mtougeron.github.com/"
         }
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=5.4.*",
+        "php": ">=5.4.0",
         "zendframework/zendframework": "2.3.*",
         "dms/meetup-api-client": "1.*"
     },
