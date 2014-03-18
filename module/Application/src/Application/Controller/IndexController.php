@@ -12,9 +12,9 @@ class IndexController extends AbstractActionController
     {
         $view = new ViewModel();
         $client = MeetupKeyAuthClient::factory(array('key' => 'asdf123')); // get the key from the config
-        
+
         $event = array(
-        	'description' => 'test event description',
+            'description' => 'test event description',
             'name' => 'test event name',
             'group_id' => 120903,
             'group_urlname' => 'sf-php',
@@ -39,9 +39,10 @@ echo 'Uh oh! ' . $e->getMessage();
 //         $response = $client->getGroups(array('group_urlname' => 'sf-php'));
 $allEvents = $client->getEvents(array('group_urlname' => 'sf-php'));
 // $allEvents = $client->getEvent(array('id' => '171336722'));
-$view->setVariable('allEvents', $allEvents);        
+$view->setVariable('allEvents', $allEvents);
 
         $view->setVariable('apiResponse', $response);
+
         return $view;
     }
 }

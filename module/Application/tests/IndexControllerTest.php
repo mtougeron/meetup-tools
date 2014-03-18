@@ -1,11 +1,9 @@
 <?php
 
-namespace ApplicationTest;
+namespace Application\tests;
 
 use Application\Module;
 use Application\Controller\IndexController;
-use Zend\Mvc\Exception\RuntimeException;
-use Zend\Mvc\Exception\InvalidArgumentException;
 use Zend\Http\Request as HttpRequest;
 use Zend\Mvc\Router\RouteMatch;
 

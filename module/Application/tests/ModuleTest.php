@@ -1,6 +1,6 @@
 <?php
 
-namespace ApplicationTest;
+namespace Application\tests;
 
 use Application\Module;
 

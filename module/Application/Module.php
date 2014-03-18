@@ -5,8 +5,6 @@ namespace Application;
 use Zend\ModuleManager\ModuleManager;
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
-use Zend\Console\Console;
-use Zend\ServiceManager\ServiceManager;
 
 class Module
 {
