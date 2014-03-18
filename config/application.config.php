@@ -7,7 +7,7 @@ $siteConfig = array(
 );
 
 $globPaths = array(
-    __DIR__ . '/autoload/{,*.}global.php',
+    __DIR__ . '/autoload/{,*.}{global,local}.php',
 );
 
 return array_replace_recursive(

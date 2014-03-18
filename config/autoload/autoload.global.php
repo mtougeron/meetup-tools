@@ -8,6 +8,9 @@
 
 $settings = array(
     // put your settings here
+    'meetup.com' => array(
+       // 'api-key' => 'your-api-key-here',
+    ),
 );
 
 /**
