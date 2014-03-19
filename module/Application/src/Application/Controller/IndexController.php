@@ -4,20 +4,12 @@ namespace Application\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
-use DMS\Service\Meetup\MeetupKeyAuthClient;
 
 class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
-        $view = new ViewModel();
-
-        $config = $this->getServiceLocator()->get('Config');
-        $client = MeetupKeyAuthClient::factory(
-            array(
-                'key' => $config['application']['meetup.com']['api-key']
-            )
-        );
+        $client = $this->MeetupClient();
 
         $event = array(
             'description' => 'test event description',
@@ -45,6 +37,8 @@ class IndexController extends AbstractActionController
 //         $response = $client->getGroups(array('group_urlname' => 'sf-php'));
         $response = $allEvents = $client->getEvents(array('group_urlname' => 'sf-php'));
 //         $allEvents = $client->getEvent(array('id' => '171336722'));
+
+        $view = new ViewModel();
         $view->setVariable('allEvents', $allEvents);
 
         $view->setVariable('apiResponse', $response);
