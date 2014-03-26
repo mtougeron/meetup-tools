@@ -5,9 +5,9 @@ namespace Application\Controller;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
-class IndexController extends AbstractActionController
+class Oauth1aController extends AbstractActionController
 {
-    public function indexAction()
+    public function authorizeResponseAction()
     {
         $client = $this->MeetupClient();
 

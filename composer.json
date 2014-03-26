@@ -21,8 +21,8 @@
     "require": {
         "php": ">=5.4.0",
         "zendframework/zendframework": "2.3.*",
-        "dms/meetup-api-client": "1.*",
-        "guzzle/guzzle": "3.7.*"
+        "dms/meetup-api-client": "master",
+        "guzzle/guzzle": "3.*"
     },
     "require-dev": {
         "symfony/class-loader": "*",

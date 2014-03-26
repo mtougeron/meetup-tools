@@ -1,6 +1,63 @@
 <div class="jumbotron">
-    <pre>
-    <?php print_r($this->apiResponse); ?>
-    </pre>
+    Welcome
 </div>
 
+<div class="row">
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Scheduled Events</h3>
+            </div>
+            <div class="panel-body">
+            <pre>
+            <?php
+                foreach ($this->scheduledEvents as $event) {
+                    print_r($event);
+                } 
+            ?>
+
+            </pre>
+                <p><a class="btn btn-success pull-right" href="" >Scheduled &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Draft Events</h3>
+            </div>
+            <div class="panel-body">
+            <pre>
+            <?php
+                foreach ($this->draftEvents as $event) {
+                    print_r($event);
+                } 
+            ?>
+
+            </pre>
+            <p><a class="btn btn-success pull-right" href="" >Drafts &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Recent Events</h3>
+            </div>
+            <div class="panel-body">
+            <pre>
+            <?php
+                foreach ($this->pastEvents as $event) {
+                    print_r($event);
+                } 
+            ?>
+
+            </pre>
+            <p><a class="btn btn-success pull-right" href="" >Recent &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+</div>
